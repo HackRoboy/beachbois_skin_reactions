@@ -1,0 +1,17 @@
+Choose a python interpreter:
+virtualenv -p usr/bin/python3.6 project_env
+
+Install all the packages of the requirements.txt file:
+pip3 install -r requirements.txt
+
+source project_env/bin/activate
+which python
+which pip3
+pip3 list
+pip3 install numpy
+deactivate
+rm -rf project_env
+
+Create a requirements file:
+pip3 freeze --local > requirements.txt
+
